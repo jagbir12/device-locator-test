@@ -1,0 +1,2 @@
+# device-locator-test
+locator
