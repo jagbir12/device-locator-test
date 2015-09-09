@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__ROOT__/Common/css/public.css" />
+	<script src="__ROOT__/Common/js/jquery/jquery-1.9.0.min.js"></script>
+	<script src="__ROOT__/Common/js/jquery/jquery.js"></script>
+	<script src="__ROOT__/Common/js/jquery/jquery.form.js"></script>
+	<script src="__ROOT__/Common/js/myscript/public.js"></script>
+</head>
+<script>
+$(function(){
+	$('#userInfo').ajaxForm({
+        success:       saveUserSuccess,
+        dataType: 'json'
+    });
+	jQuery("#deptId").val({$info.dept_id});  
+});
+function saveUserSuccess(data) {
+	if(data.status == 1) {
+		window.parent.refreshUserList(data.userTree);
+	}
+}
+</script>
+<body style="background-color:#fff;">
+<form id="userInfo" method="post" action="__URL__/saveUser">
+<input type="hidden" name="addFlag" value="{$addFlag}">
+<input type="hidden" name="uid" value="{$info.uid}">
+		<div class="user_info">
+		
+			<p><span>login name:</span><input name="name" type="text" value="{$info.name}"  <if condition="$addFlag eq 0">readonly</if> /></p>
+			<p><span>Name:</span><input name="truename" type="text" value="{$info.truename}" /></p>
+			<p><span>the company:</span>
+					<span class="styled-select">
+						<select id="deptId" name="deptId" >
+							<volist name="deptList" id="deptInfo">
+								<option value="{$deptInfo.dept_id}">{$deptInfo.dept_name}</option>
+							</volist>
+						</select>
+					</span>
+			</p>
+			<p class="permission">
+				<span>Administrator privileges:</span>
+				<input type="radio" name="adminFlag" value="1"   <if condition="$info.admin_flag eq 1">checked</if>   />It is
+				<input type="radio" name="adminFlag" value="0" <if condition="$info.admin_flag eq 0">checked</if> style="margin-left:37px;" />No
+			</p>
+			<p class="state">
+				<span>Status:</span>
+				<input type="radio" name="delFlag" value="0" <if condition="$info.del_flag eq 0">checked</if>  />Enable
+				<input type="radio" name="delFlag" value="1" style="margin-left:20px;" <if condition="$info.del_flag eq 1">checked</if> />Disabled
+			</p>
+			<div class="user_btn">
+				<input class="btn_ok" type="submit" value="确定" />
+			</div>
+			
+		</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,1831 @@
+[ 2015-06-10T19:58:32+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: msg C:\xampp\htdocs\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2015-06-10T19:58:40+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.022349s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.031683s ]
+
+[ 2015-06-10T19:58:40+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.010982s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.005862s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.009741s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2015-06-10T19:58:41+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000338s ]
+
+[ 2015-06-10T19:58:44+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001933s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.012146s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 123 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2015-06-10T19:58:54+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+
+[ 2015-06-10T19:58:54+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: msg C:\xampp\htdocs\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2015-06-10T19:58:56+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002173s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000279s ]
+
+[ 2015-06-10T19:58:57+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000265s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000277s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000197s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2015-06-10T19:58:57+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000284s ]
+
+[ 2015-06-10T19:59:00+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001939s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001831s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 123 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2015-06-10T20:16:29+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: msg C:\xampp\htdocs\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2015-06-10T20:16:35+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001973s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000249s ]
+
+[ 2015-06-10T20:16:35+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000279s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000176s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000191s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-06-10T20:16:35+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000273s ]
+
+[ 2015-06-10T20:16:38+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001998s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001845s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 125 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-06-10T20:17:07+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002101s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001860s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 125 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2015-06-10T20:19:15+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001987s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001842s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2015-06-10T20:19:28+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+
+[ 2015-06-10T20:19:28+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: msg C:\xampp\htdocs\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2015-06-10T20:19:29+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003624s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000273s ]
+
+[ 2015-06-10T20:19:29+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000275s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000172s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000191s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2015-06-10T20:19:29+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000304s ]
+
+[ 2015-06-10T20:19:32+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003767s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.003631s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2015-06-10T20:20:07+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000285s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000175s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000189s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002332s ]
+
+[ 2015-06-10T20:20:07+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000286s ]
+
+[ 2015-06-10T20:20:10+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002048s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001964s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 135 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2015-06-10T20:20:47+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000367s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000262s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000260s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2015-06-10T20:20:47+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000347s ]
+
+[ 2015-06-10T20:20:50+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001992s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001849s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2015-06-10T20:21:31+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002109s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001850s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2015-06-10T20:21:58+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001974s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001852s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2015-06-10T20:22:39+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002284s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.002088s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2015-06-10T20:24:26+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002077s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001904s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 139 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2015-06-10T20:24:59+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002103s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001842s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 139 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2015-06-10T20:25:50+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002010s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001866s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 137 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2015-06-10T20:26:46+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002064s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001874s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 137 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2015-06-10T20:27:02+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002441s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001882s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 137 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2015-06-10T20:27:50+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002039s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001859s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2015-06-10T20:28:18+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002275s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001927s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2015-06-10T20:28:42+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002473s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.002431s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000326s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2015-06-10T20:28:57+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002458s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.002096s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001725s ]
+
+[ 2015-06-10T20:29:14+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001994s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001939s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2015-06-10T20:29:38+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000346s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000249s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000198s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2015-06-10T20:29:38+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000276s ]
+
+[ 2015-06-10T20:29:41+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001968s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001903s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2015-06-10T20:30:11+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000267s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000173s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000189s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003099s ]
+
+[ 2015-06-10T20:30:11+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000393s ]
+
+[ 2015-06-10T20:30:13+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004782s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.004827s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2015-06-10T20:30:46+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004869s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.004758s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003107s ]
+
+[ 2015-06-10T20:32:02+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004808s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.004683s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2015-06-10T20:32:47+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000281s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000173s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000189s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001573s ]
+
+[ 2015-06-10T20:32:47+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000287s ]
+
+[ 2015-06-10T20:32:49+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.005179s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.004742s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2015-06-10T20:33:04+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000272s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000279s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000253s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000165s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003977s ]
+
+[ 2015-06-10T20:33:04+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000282s ]
+
+[ 2015-06-10T20:33:07+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004794s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.004708s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2015-06-10T20:33:30+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000268s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000174s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000189s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002042s ]
+
+[ 2015-06-10T20:33:30+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000274s ]
+
+[ 2015-06-10T20:33:33+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002102s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.002013s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000355s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2015-06-10T20:33:57+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002188s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001965s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2015-06-10T20:34:14+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000269s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000231s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000268s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2015-06-10T20:34:14+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000330s ]
+
+[ 2015-06-10T20:34:16+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001926s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001842s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2015-06-10T20:35:22+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000318s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000200s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000191s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2015-06-10T20:35:22+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000317s ]
+
+[ 2015-06-10T20:35:25+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001970s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.002047s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2015-06-10T20:35:37+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000272s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000167s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000187s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2015-06-10T20:35:38+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000282s ]
+
+[ 2015-06-10T20:35:41+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001939s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001863s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2015-06-10T20:36:05+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001978s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001884s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 133 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2015-06-10T20:36:59+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001959s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001847s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 133 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2015-06-10T20:37:24+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001949s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001899s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 133 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2015-06-10T20:38:13+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001966s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.001850s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 128 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2015-06-10T20:38:47+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003357s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.003343s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2015-06-10T20:39:08+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+
+[ 2015-06-10T20:39:08+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: msg C:\xampp\htdocs\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2015-06-10T20:39:09+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003297s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000282s ]
+
+[ 2015-06-10T20:39:09+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.000269s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.000179s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.000193s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2015-06-10T20:39:10+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000276s ]
+
+[ 2015-06-10T20:39:12+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003094s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.002957s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2015-06-10T20:39:47+08:00 ] 127.0.0.1 /app/index.php/Home/Image/saveDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.003085s ]
+SQL: DELETE FROM `image_detail` WHERE ( image_id=15 ) [ RunTime:0.021828s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'22','','33',0,'1206px','613px') [ RunTime:0.000864s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',1,'138px','202px') [ RunTime:0.000134s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',0,'444px','101px') [ RunTime:0.000116s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',1,'559px','135px') [ RunTime:0.000113s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',2,'568px','301px') [ RunTime:0.000112s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',1,'332px','164px') [ RunTime:0.000112s ]
+
+[ 2015-06-10T20:40:32+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004885s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.004617s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2015-06-10T20:41:13+08:00 ] 127.0.0.1 /app/index.php/Home/Image/saveDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.004586s ]
+SQL: DELETE FROM `image_detail` WHERE ( image_id=15 ) [ RunTime:0.000316s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',1,'332px','164px') [ RunTime:0.000151s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',2,'568px','301px') [ RunTime:0.000126s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',1,'559px','135px') [ RunTime:0.000114s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',0,'444px','101px') [ RunTime:0.000113s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'','','',1,'138px','202px') [ RunTime:0.000111s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (15,'22','','33',0,'98px','57px') [ RunTime:0.000110s ]
+
+[ 2015-06-10T20:57:37+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: msg C:\xampp\htdocs\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2015-06-10T20:57:46+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: msg C:\xampp\htdocs\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2015-06-10T20:57:48+08:00 ] 127.0.0.1 /app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.022335s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.023311s ]
+
+[ 2015-06-10T20:57:48+08:00 ] 127.0.0.1 /app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.015899s ]
+SQL: select * from floor where dept_id = '1' and del_flag=0  [ RunTime:0.005652s ]
+SQL: select * from image where dept_id = '1' and floor_id='1'  [ RunTime:0.009915s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2015-06-10T20:57:48+08:00 ] 127.0.0.1 /app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: select * from floor where del_flag='0' and dept_id = '1' [ RunTime:0.000273s ]
+
+[ 2015-06-10T20:57:50+08:00 ] 127.0.0.1 /app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001917s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.013208s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: path C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+NOTIC: [8] Undefined index: savename C:\xampp\htdocs\app\Application\Runtime\Cache\Home\91af0b494442a729532da502a52c406c.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002679s ]
+

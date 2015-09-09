@@ -1,0 +1,785 @@
+[ 2015-08-17T13:07:40+08:00 ] ::1 /j/Chen/app/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003843s ]
+
+[ 2015-08-17T13:07:40+08:00 ] ::1 /j/Chen/app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000675s ]
+NOTIC: [8] Undefined variable: msg C:\wamp\www\j\Chen\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2015-08-17T13:07:53+08:00 ] ::1 /j/Chen/app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.022167s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000806s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001669s ]
+
+[ 2015-08-17T13:08:22+08:00 ] ::1 /j/Chen/app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001618s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.037598s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = '7dc1f267e376c6baf6a5e05683747318' ) LIMIT 1   [ RunTime:0.000797s ]
+
+[ 2015-08-17T13:08:22+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000633s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000603s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.001033s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000820s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.002348s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000778s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000781s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005908s ]
+
+[ 2015-08-17T13:08:23+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002293s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.001646s ]
+
+[ 2015-08-17T13:08:32+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/readImage/image_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.030610s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 15 ) LIMIT 1   [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.014195s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 15 )  [ RunTime:0.000926s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000874s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003064s ]
+
+[ 2015-08-17T13:09:15+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/delImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from image where image_id= '15' [ RunTime:0.000926s ]
+SQL: delete from image_detail where image_id= '15'  [ RunTime:0.000787s ]
+SQL: delete from image where image_id= '15'  [ RunTime:0.089377s ]
+NOTIC: [2] unlink(./UPLOADS/Public/Upload/Image/20150817/55d1438048c1b.jpg): No such file or directory C:\wamp\www\j\Chen\app\Application\Home\Controller\ImageController.class.php 第 50 行.
+
+[ 2015-08-17T13:09:15+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001827s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000744s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000774s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000774s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000754s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000768s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000460s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000916s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004593s ]
+
+[ 2015-08-17T13:09:16+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.001703s ]
+
+[ 2015-08-17T13:09:57+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '5' [ RunTime:0.000936s ]
+
+[ 2015-08-17T13:11:32+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Upload.class.php 第 169 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.017679s ]
+SQL: INSERT INTO `image` (`image_name`,`savename`,`path`,`dept_id`,`floor_id`) VALUES ('jj','55d16d0473316.jpg','./Public/Upload/Image/20150817/',5,9) [ RunTime:0.012656s ]
+
+[ 2015-08-17T13:11:32+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002078s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000561s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000583s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000406s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000463s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000708s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000378s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000716s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002454s ]
+
+[ 2015-08-17T13:11:33+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.000669s ]
+
+[ 2015-08-17T13:11:39+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/readImage/image_id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.019473s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 16 ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.034898s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 16 )  [ RunTime:0.000703s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000814s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002949s ]
+
+[ 2015-08-17T13:12:20+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/readImage/image_id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001580s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.016590s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 16 ) LIMIT 1   [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.019631s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 16 )  [ RunTime:0.000797s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000404s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002914s ]
+
+[ 2015-08-17T13:12:46+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/delImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from image where image_id= '16' [ RunTime:0.000527s ]
+SQL: delete from image_detail where image_id= '16'  [ RunTime:0.000270s ]
+SQL: delete from image where image_id= '16'  [ RunTime:0.000351s ]
+
+[ 2015-08-17T13:12:47+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000721s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000433s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000360s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000522s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000668s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000900s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000457s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000859s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002453s ]
+
+[ 2015-08-17T13:12:47+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002299s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.000661s ]
+
+[ 2015-08-17T13:22:36+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '5' [ RunTime:0.000552s ]
+
+[ 2015-08-17T13:23:53+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001625s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Upload.class.php 第 169 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.018559s ]
+SQL: INSERT INTO `image` (`image_name`,`savename`,`path`,`dept_id`,`floor_id`) VALUES ('Library','55d16fe97f3af.jpg','./Public/Upload/Image/20150817/',5,9) [ RunTime:0.000629s ]
+
+[ 2015-08-17T13:23:53+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000592s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.001456s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000650s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000522s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000368s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000409s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000785s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006888s ]
+
+[ 2015-08-17T13:23:53+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002713s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.001838s ]
+
+[ 2015-08-17T13:24:00+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/readImage/image_id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.016518s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 17 ) LIMIT 1   [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.011432s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 17 )  [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000707s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012401s ]
+
+[ 2015-08-17T13:28:36+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/addFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: insert into floor(floor_name,dept_id) values('admin','5'); [ RunTime:0.125401s ]
+SQL: select * from department where del_flag=0  [ RunTime:0.001192s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000789s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.001094s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.001142s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000776s ]
+SQL: select * from image where dept_id = '5' and floor_id='11'  [ RunTime:0.000714s ]
+
+[ 2015-08-17T14:00:27+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016617s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000541s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000760s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.001126s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000519s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000485s ]
+SQL: select * from image where dept_id = '5' and floor_id='11'  [ RunTime:0.000366s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000423s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000793s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031685s ]
+
+[ 2015-08-17T14:00:27+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004479s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.001126s ]
+
+[ 2015-08-17T14:00:42+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/readImage/image_id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008302s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.028240s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 17 ) LIMIT 1   [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.020468s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 17 )  [ RunTime:0.000853s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000508s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000966s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006090s ]
+
+[ 2015-08-17T14:02:47+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000677s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000464s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000354s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000408s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000389s ]
+SQL: select * from image where dept_id = '5' and floor_id='11'  [ RunTime:0.000319s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000429s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000798s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002925s ]
+
+[ 2015-08-17T14:02:47+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002489s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.000567s ]
+
+[ 2015-08-17T14:03:10+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002651s ]
+
+[ 2015-08-17T14:03:10+08:00 ] ::1 /j/Chen/app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001899s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Undefined variable: msg C:\wamp\www\j\Chen\app\Application\Runtime\Cache\Home\ddaf032eeb3f0e441c9409c65fc90ee1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002119s ]
+
+[ 2015-08-17T14:03:34+08:00 ] ::1 /j/Chen/app/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.023224s ]
+SQL: SELECT `uid`,`name`,`truename`,`admin_flag`,`dept_id`,`pwd` FROM `user` WHERE ( `name` = 'admin' ) AND ( `pwd` = '7dc1f267e376c6baf6a5e05683747318' ) LIMIT 1   [ RunTime:0.001208s ]
+
+[ 2015-08-17T14:03:34+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000524s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000528s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000758s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000702s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000587s ]
+SQL: select * from image where dept_id = '5' and floor_id='11'  [ RunTime:0.000959s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.001406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000551s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003334s ]
+
+[ 2015-08-17T14:03:34+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000314s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.000638s ]
+
+[ 2015-08-17T14:03:49+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/readImage/image_id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002163s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.020736s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 17 ) LIMIT 1   [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.014665s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 17 )  [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003013s ]
+
+[ 2015-08-17T14:04:15+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/delImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from image where image_id= '17' [ RunTime:0.000610s ]
+SQL: delete from image_detail where image_id= '17'  [ RunTime:0.000699s ]
+SQL: delete from image where image_id= '17'  [ RunTime:0.000876s ]
+
+[ 2015-08-17T14:04:15+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.000513s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000372s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000353s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000385s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000319s ]
+SQL: select * from image where dept_id = '5' and floor_id='11'  [ RunTime:0.000302s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000460s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002440s ]
+
+[ 2015-08-17T14:04:15+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.001828s ]
+
+[ 2015-08-17T14:04:36+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '5' [ RunTime:0.000643s ]
+
+[ 2015-08-17T14:04:52+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001837s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Upload.class.php 第 169 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.018755s ]
+SQL: INSERT INTO `image` (`image_name`,`savename`,`path`,`dept_id`,`floor_id`) VALUES ('library','55d1798402da3.jpg','./Public/Upload/Image/20150817/',5,9) [ RunTime:0.000487s ]
+
+[ 2015-08-17T14:04:52+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/listImage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004499s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from department where del_flag=0  [ RunTime:0.001857s ]
+SQL: select * from floor where dept_id = '3' and del_flag=0  [ RunTime:0.000786s ]
+SQL: select * from floor where dept_id = '5' and del_flag=0  [ RunTime:0.000455s ]
+SQL: select * from image where dept_id = '5' and floor_id='9'  [ RunTime:0.000708s ]
+SQL: select * from image where dept_id = '5' and floor_id='10'  [ RunTime:0.000485s ]
+SQL: select * from image where dept_id = '5' and floor_id='11'  [ RunTime:0.000363s ]
+SQL: select * from department where del_flag='0'  [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000381s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000723s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012768s ]
+
+[ 2015-08-17T14:04:52+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/searchFloor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004713s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select * from floor where del_flag='0' and dept_id = '3' [ RunTime:0.000661s ]
+
+[ 2015-08-17T14:05:02+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/readImage/image_id/18.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004404s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.016410s ]
+SQL: SELECT * FROM `image` WHERE ( `image_id` = 18 ) LIMIT 1   [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.011706s ]
+SQL: SELECT * FROM `image_detail` WHERE ( `image_id` = 18 )  [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000422s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000808s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010423s ]
+
+[ 2015-08-17T14:17:55+08:00 ] ::1 /j/Chen/app/index.php/Home/Image/saveDetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\j\Chen\app\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `image_detail` [ RunTime:0.014856s ]
+SQL: DELETE FROM `image_detail` WHERE ( image_id=18 ) [ RunTime:0.000530s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (18,'','','',0,'165px','322px') [ RunTime:0.000962s ]
+SQL: INSERT INTO `image_detail` (`image_id`,`content1`,`content2`,`content3`,`type`,`left`,`top`) VALUES (18,'','','',0,'0px','0px') [ RunTime:0.018220s ]
+
